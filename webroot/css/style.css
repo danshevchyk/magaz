@@ -1,0 +1,12 @@
+body{
+    padding-top: 50px;
+
+}
+.starter-template{
+    padding: 40px 15px;
+    color: black;
+}
+form{
+    width: 400px;
+    max-width: 400px;
+}

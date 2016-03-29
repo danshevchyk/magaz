@@ -1,0 +1,44 @@
+<head>
+    <title><?=Config::get('site_name')?></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/webroot/css/style.css">
+    <script src="/js/admin.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+        function confirmDelete() {
+            if (confirm("Вы уверены что хотите удалить страницу?")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    <style>
+        body{
+            padding-top: 50px;
+            background: url(http://shooltz.ru/wp-content/uploads/2012/01/texture1.png) top center no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .starter-template{
+            padding: 40px 15px;
+            color: black;
+        }
+        form{
+            width: 400px;
+            max-width: 400px;
+        }
+        .alert{
+            width: 400px;
+            max-width: 400px;
+        }
+
+
+
+    </style>
+</head>

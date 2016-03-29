@@ -1,0 +1,38 @@
+<h3>Добавление нового товара</h3>
+<form method="post" action="" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label for="name">Название</label>
+        <input type="text" id="name" name="name" value="" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="code">Код товара</label>
+        <input type="text" id="code" name="code" value="" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="price">Цена</label>
+        <input type="text" id="price" name="price" value="" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="brand">Производитель</label>
+        <input type="text" id="brand" name="brand" value="" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="image">Изображение</label>
+        <input type="file" id="image" name="image" value="" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="description">Описание товара</label>
+        <textarea id="description" name="description" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="is_new">  Новинка?</label>
+        <input type="checkbox" name="is_new" id="is_new" checked="checked" />
+        <label for="is_recommended"> В рекомендуемые товары</label>
+        <input type="checkbox" name="is_recommended" id="is_recommended" checked="checked" />
+        <label for="status">Есть в наличии?</label>
+        <input type="checkbox" name="status" id="status" checked="checked" />
+    </div>
+
+    <input type="submit" class="btn btn-success" />
+</form>

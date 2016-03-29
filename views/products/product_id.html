@@ -1,0 +1,53 @@
+<section>
+<div class="col-sm-9 padding-center">
+    <div class="product-details"><!--product-details-->
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="view-product">
+                    <img src="http://blog.p4n.net/uploaded_images/03_n82-706486.jpg" alt="" />
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="product-information"><!--/product-information-->
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzNDNYNMbR_2Gdm2UhOpq4k0J4qdlxG63if5sZXi20FO5_iWg4WQ" class="newarrival" alt="" />
+                    <h2><?=$data['product']['name']?></h2>
+                    <p>Код товара:<?=$data['product']['code']?><br></p>
+                                        <span>
+                                            <span>$<?=$data['product']['price']?><br></span>
+                                            <label>Количество:</label>
+                                            <input type="text" value="" />
+                                            <button type="button" class="btn btn-success"> В корзину</button>
+                                        </span>
+                    <p><b>Наличие:</b> На складе</p>
+                    <p><b>Состояние:</b> Новое</p>
+                    <p><b>Производитель:</b><?=$data['product']['brand']?><br></p>
+                </div><!--/product-information-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>Описание товара</h5>
+                <p><?=$data['product']['description']?></p>
+
+            </div>
+        </div>
+    </div><!--/product-details-->
+
+</div>
+</section>
+
+
+
+
+
+
+
+<!--<h1><?=$data['product']['name']?></h1>
+
+<?=$data['product']['brand']?><br>
+
+<?=$data['product']['code']?><br>
+
+<?=$data['product']['price']?><br>
+
+<?=$data['product']['description']?><br>-->

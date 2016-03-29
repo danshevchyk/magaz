@@ -1,0 +1,26 @@
+<section>
+    <legend class="title text-center">Товары</legend>
+    <?php foreach($data['product'] as $page_data) { ?>
+    <div class="col-sm-4">
+        <div class="product-image-wrapper">
+            <div class="single-products">
+                <div class="productinfo text-center">
+                    <img src="http://blog.p4n.net/uploaded_images/03_n82-706486.jpg" alt="" />
+                    <h2>$<?=$page_data['price']?></a></h2>
+                    <p><a href="/products/product_id/<?=$page_data['id']?>"><?=$page_data['name']?></a></p>
+                    <a href="#" class="btn btn-success">В корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+             <?php } ?>
+</section>
+<!--
+<?php foreach($data['product'] as $page_data) { ?>
+
+<div style="margin-top: 20px;">
+    <a href="/pages/product_id/<?=$page_data['id']?>"><?=$page_data['name']?></a>
+</div>
+/webroot/img/<?=$page_data['image']?>
+
+<?php } ?>-->

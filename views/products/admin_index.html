@@ -1,0 +1,18 @@
+<h3>Товар</h3><br/>
+<table class="table table-striped" style="width:500px;">
+    <?php foreach($data['product'] as $page_data) {?>
+    <tr>
+        <td><b><?=$page_data['name']?></b></td>
+        <td align="right">
+            <a href="/admin/products/edit/<?=$page_data['id']?>"><button class="btn btn-sm btn-primary">Редактировать</button></a>
+            <a href="/admin/products/delete/<?=$page_data['id']?>"onclick="return confirmDelete();"><button class="btn btn-sm btn-warning">Удалить</button></a>
+        </td>
+    </tr>
+    <?php } ?>
+</table>
+
+<br/>
+
+<div>
+    <a href="/admin/products/add/"><button class="btn btn-sm btn-success">Новый товар</button></a>
+</div>

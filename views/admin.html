@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<?php include ROOT.'/views/header.html'; ?>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><?=Config::get('site_name')?> - <?=__('lng.admin',' Admin')?></a>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <?php if ( Session::get('login') ) { ?>
+                <ul class="nav navbar-nav">
+                    <li <?php if( App::getRouter()->getController() == 'pages' ) { ?>class="active" <?php } ?>> <a href="/admin/pages/">Блог</a></li>
+                    <li <?php if( App::getRouter()->getController() == 'product' ) {?>class="active"<?php } ?>><a href="/admin/products/">Каталог товаров</a></li>
+                    <li <?php if( App::getRouter()->getController() == 'contacts' ) {?>class="active"<?php } ?>><a href="/admin/contacts/">Сообщения от пользователей</a></li>
+                    <li><a href="/admin/users/logout">Выход</a></li>
+                </ul>
+                <?php } ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+
+            <?php if( Session::hasFlash() ){?>
+            <div class="alert alert-info" role="alert">
+                <?php Session::flash();?>
+            </div>
+            <?php } ?>
+
+            <?=$data['content']?>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="navbar-fixed-bottom row-fluid">
+            <div class="navbar-inner">
+                <div class="container">
+                    <p class="pull-right">Copyright © 2016</p>
+                    <p class="pull-left">MagaZ.com.ua</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
